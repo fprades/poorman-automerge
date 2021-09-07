@@ -7,4 +7,4 @@ This is the Poorman devops. It automatically merges Pull Requests if all the pre
 - Runs the usual *build*, and *tests*.
 - Pushes `head` and `base`, if all the previous conditions succeded. Effectivily merging the Pull Request
 
-This is useful if you are running a limited version of github, or git hosting provider.
+This is useful if you are running a limited, old, or restricted git hosting provider. For example auto-merge is not available on private github.com Free repositories.
