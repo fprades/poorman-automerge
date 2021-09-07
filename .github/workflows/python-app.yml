@@ -20,7 +20,7 @@ jobs:
       run: |
         env|sort
         git fetch origin $GITHUB_HEAD_REF $GITHUB_BASE_REF
-        git log --oneline --graph --format="%h - %m %C %ce" HEAD origin/$GITHUB_HEAD_REF origin/$GITHUB_BASE_REF
+        git log --oneline --graph --format="%h - %s %d %ce" HEAD origin/$GITHUB_HEAD_REF origin/$GITHUB_BASE_REF
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
       with:
