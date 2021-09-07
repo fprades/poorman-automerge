@@ -20,7 +20,7 @@ jobs:
       run: |
         env|sort
         git fetch origin $GITHUB_HEAD_REF $GITHUB_BASE_REF
-        git log --oneline --graph --format="%h - %m %S %ce" HEAD origin/$GITHUB_HEAD_REF origin/$GITHUB_BASE_REF
+        git log --oneline --graph --format="%h - %m %C %ce" HEAD origin/$GITHUB_HEAD_REF origin/$GITHUB_BASE_REF
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
       with:
@@ -38,4 +38,4 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pytest -x
+        pytest
