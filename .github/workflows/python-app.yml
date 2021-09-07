@@ -19,6 +19,8 @@ jobs:
     - name: env
       run: |
         env|sort
+        git fetch origin $GITHUB_HEAD_REF $GITHUB_BASE_REF
+        git log --oneline --graph --format="%h - %m %S"
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
       with:
