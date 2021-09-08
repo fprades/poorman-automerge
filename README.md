@@ -1,4 +1,4 @@
-# poorman-devops
+# poorman-automerge
 
 This is the Poorman devops. It automatically merges Pull Requests if all the previous steps complete successfully. Enforcing _build+tests_ in addition to the usual code merge conflict integrity.
 
